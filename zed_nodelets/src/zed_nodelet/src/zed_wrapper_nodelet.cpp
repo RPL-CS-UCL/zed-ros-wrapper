@@ -165,13 +165,13 @@ void ZEDWrapperNodelet::onInit()
   std::string conf_map_topic = confImgRoot + "/" + conf_map_topic_name;
 
   // Set the positional tracking topic names
-  std::string poseTopic = "pose";
+  std::string poseTopic = "zed_pose";
   std::string pose_cov_topic;
   pose_cov_topic = poseTopic + "_with_covariance";
 
-  std::string odometryTopic = "odom";
-  std::string odom_path_topic = "path_odom";
-  std::string map_path_topic = "path_map";
+  std::string odometryTopic = "zed_odom";
+  std::string odom_path_topic = "zed_path_odom";
+  std::string map_path_topic = "zed_path_map";
 
   std::string odomStatusTopic = odometryTopic + "/status";
   std::string poseStatusTopic = poseTopic + "/status";

@@ -593,9 +593,9 @@ private:
   std::string mCloudFrameId;
   std::string mPointCloudFrameId;
 
-  std::string mMapFrameId = "map";
-  std::string mOdomFrameId = "odom";
-  std::string mBaseFrameId = "base_link";
+  std::string mMapFrameId = "zed_map";
+  std::string mOdomFrameId = "zed_odom";
+  std::string mBaseFrameId = "zed_base_link";
   std::string mCameraFrameId;
 
   std::string mRightCamFrameId;
